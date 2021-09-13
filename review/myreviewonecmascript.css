@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    text-decoration: none;
+    background-color: wheat;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0%;
+    right: 0%;
+    background: black;
+    box-shadow: 0 5px 10px black;
+    padding: 0px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 10px 0px 20px 10px whitesmoke;
+}
+
+
+header .nav_links ul {
+    list-style: none;
+}
+
+header .nav_links ul li {
+    position: relative;
+    float: left;
+}
+
+header .nav_links ul li a {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+header .nav_links ul li a:hover {
+    background: gray;
+    transition: 0.80s;
+}
+
+a img {
+    height: 55px;
+    width: 100px;
+}
+
+header .nav_links ul li ul {
+    position: absolute;
+    left: none;
+    width: 120px;
+    background: lightgrey ;
+}
+
+.box {
+    text-align: center;
+}
+
+.group {
+    display: inline-block;
+    padding: 50px;
+}
+
+img {
+    height: 200px;
+    
+}   
+
+p {
+    text-align: justify;
+    padding: 0px 100px 20px 100px;
+}
+h2 {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    padding: 40px;
+}
+
+.vid {
+text-align: center;
+}
+
+.videos {
+    display: inline-block;
+    padding: 20px; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    padding-top: 30px;
+}
+
