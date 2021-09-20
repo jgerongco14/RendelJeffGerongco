@@ -104,7 +104,7 @@
                 }
                 
                 .content img:hover {
-                    background-color: #499add;
+                    background-color: #989da1;
                 }
                 
                 .image {
@@ -378,7 +378,7 @@
                 .count .input input:focus~label,
                 .count .input input:valid~label {
                     transform: translateY(-23px);
-                    color: crimson;
+                    color: blue;
                 }
                 
                 .but {
@@ -400,7 +400,7 @@
                 }
                 
                 .but input:hover {
-                    background-color: red;
+                    background-color: green;
                     color: white;
                 }
                 

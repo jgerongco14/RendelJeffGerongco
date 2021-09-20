@@ -133,19 +133,6 @@
                 </p>
             </div>
         </div>
-
-        <h1>Video Links</h1>
-        <div class="vid">
-            <div class="videos">
-                <iframe width="300px" height="200px" src="https://www.youtube.com/watch?v=TjDFcilj878" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-            </div>
-            <div class="videos">
-                <iframe width="300px" height="200px" src="https://www.youtube.com/watch?v=UjTIoeI8OLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-            </div>
-            <div class="videos">
-                <iframe width="300px" height="200px" src="https://www.youtube.com/watch?v=ltH_rZuMCV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-            </div>
-        </div>
         <div class="skill_con">
             <h1 id="exp">Experties</h1>
             <div class="skillbox">
@@ -231,30 +218,30 @@
                 <div class="name">
                     <div class="count">
                         <div class="input">
-                            <input type="text" required>
+                            <input type="text" id="question">
                             <label>First Name</label>
                         </div>
                     </div>
                     <div class="count">
                         <div class="input">
-                            <input type="text" required>
+                            <input type="text" id="question">
                             <label>Middle Name</label>
                         </div>
                     </div>
                     <div class="count">
                         <div class="input">
-                            <input type="text" required>
+                            <input type="text" id="question">
                             <label>Last Name</label>
                         </div>
                     </div>
                     <div class="count">
                         <div class="input">
-                            <input type="text" required>
+                            <input type="text" id="question">
                             <label>Contact Number</label>
                         </div>
                     </div>
                     <div class="but">
-                        <input type="button" type="SUBMIT" value="SUBMIT" onclick="showMessage()">
+                        <input type="button" value="SUBMIT" onclick="showMessage()">
                         <input type="reset" value="RESET">
                     </div>
                 </div>
@@ -266,8 +253,11 @@
 
     <script>
         function showMessage() {
-
-            alert("Form has sent!");
+            if (document.getElementById("question").value.length == 0) {
+                alert("empty")
+            } else {
+                alert("Form has sent!");
+            }
 
         }
     </script>
