@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(resto/wood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    background-color: #082742;
+    position: relative;
+}
+
+nav {
+    height: 100px;
+    width: 80%;
+    margin: auto;
+}
+
+label.logo {
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bolder;
+    background-color: white;
+    border-radius: 10px;
+    color: #082742;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    box-shadow: 0px 10px 30px #242526;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #0f4c81;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #2c3e50;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 20px;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+    a:hover {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+.box {
+    text-align: center;
+}
+
+.boxes {
+    display: inline-block;
+    background-color: #041421;
+    padding-bottom: 50px;
+    padding: 0px 30px;
+    border-radius: 10px;
+}
+
+.box .boxes img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.box .boxes label {
+    font-weight: bold;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.out {
+    background-color: transparent;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+}
+
+.outer {
+    padding-top: 100px;
+}
+
+.in {
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.count {
+    display: inline-block;
+}
+
+.name .count .input {
+    height: 40px;
+    width: 100%;
+    position: relative;
+    padding-top: 20px;
+}
+
+.name .count .input input {
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.name .count .input label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    pointer-events: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.count .input input:focus~label,
+.count .input input:valid~label {
+    transform: translateY(-23px);
+    color: green;
+}
+
+.check {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.check input {
+    width: 30px;
+    height: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.but {
+    text-align: center;
+    padding: 50px;
+}
+
+.but input {
+    font-size: 20px;
+    font-family: 'Arial';
+    font-weight: bold;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.but input:hover {
+    background-color: red;
+    color: white;
+}
+
+form h1 {
+    display: flex;
+    margin: auto;
+    padding: 30px;
+}
+
+p {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+form .checkbox label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+label {
+    color: white;
+}
+
+form {
+    padding: 40px;
+}
+
+.out {
+    transition: 0.6s;
+}
+
+.out:hover {
+    box-shadow: 0 0px 30px white;
+}
+
+.boxes {
+    transition: 0.6s;
+}
+
+.boxes:hover {
+    box-shadow: 0 0px 30px white;
+    transform: scale(1.1);
+}
+
+h2 {
+    padding-left: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: white;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.menu {
+    box-shadow: 0 0px 30px white;
+    border-radius: 10px;
+    padding: 50px 0px;
+    width: 90%;
+    margin: auto;
+}
+
+section {
+    padding: 2em 9%;
+}
+
+.home {
+    display: flex;
+    gap: 5rem;
+    min-height: 100px;
+    align-items: center;
+    height: 85vh;
+}
+
+.home .image {
+    flex: 1 1 5rem;
+}
+
+.home .image img {
+    width: 100%;
+}
+
+.home .desc h3 {
+    text-align: center;
+    font-size: 80px;
+    font-weight: bolder;
+    color: white;
+}
+
+.home .desc {
+    text-align: center;
+}
+
+.desc a {
+    border-radius: 20px;
+    background-color: tomato;
+    padding: 15px;
+    color: white;
+    transition: 0.8s;
+}
+
+.home .desc a:hover {
+    background-color: white;
+    color: black;
+}

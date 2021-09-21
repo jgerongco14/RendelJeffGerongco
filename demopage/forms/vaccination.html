@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination Form</title>
+    <link rel="stylesheet" href="vaccination.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">RJG</label>
+            <ul>
+                <li><a href="../index.html"> HOME </a></li>
+                <li><a href="../tribute/tribute.html"> TRIBUTE </a></li>
+                <li><a href="../gallery/gallery.html"> GALLERY </a></li>
+                <li><a href="../restaurant/myrestaurant.html"> RESTAURANT </a></li>
+                <li><a href="../forms/vaccination.html"> FORMS </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form>
+        <div class="outer">
+            <div class="inner">
+                <h1>Vaccination Form</h1>
+                Name
+                <div class="name">
+                    <div class="count">
+                        <div class="input">
+                            <input type="text" required>
+                            <label>First Name</label>
+                        </div>
+                    </div>
+                    <div class="count">
+                        <div class="input">
+                            <input type="text" required>
+                            <label>Middle Name</label>
+                        </div>
+                    </div>
+                    <div class="count">
+                        <div class="input">
+                            <input type="text" required>
+                            <label>Last Name</label>
+                        </div>
+                    </div>
+                    <div class="count">
+                        <div class="input">
+                            <input type="text" required>
+                            <label>Suffix</label>
+                        </div>
+                    </div>
+
+                    <div class="second">
+                        <div class="info">
+                            Gender:&nbsp; <input type="radio" name="gender" value="male"> Male <br>
+                        </div>
+                        &nbsp;
+                        <div class="info">
+                            <input type="radio" name="gender" value="Female" id="gender"> Female <br>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;
+                        <div class="info">
+                            Birthday:&nbsp; <input type="date" name="birthday">
+                        </div>
+                        &nbsp;&nbsp;&nbsp;
+                        <div class="info">
+                            <select name="Age" id="age">
+                                <option>Age</option>
+                                <option>0-10</option>
+                                <option>11-20</option>
+                                <option>21-30</option>
+                                <option>31-40</option>
+                                <option>41-50</option>
+                                <option>51+</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="third">
+                        <div class="info">
+                            <input type="text" required>
+                            <label>Address</label>
+                        </div>
+                        <div class="info">
+                            <input type="text" required>
+                            <label>City</label>
+                        </div>
+                        <div class="info">
+                            <input type="text" required>
+                            <label>Province</label>
+                        </div>
+                    </div>
+                    <div class="forth">
+                        <div class="info">
+                            <input type="text" name="job" required>
+                            <label>Occupation</label>
+                        </div>
+                        <div class="info">
+                            <input type="text" name="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="info">
+                            <input type="text" name="number" required>
+                            <label>Phone Number</label>
+                        </div>
+                        <div class="info">
+                            <input type="text" name="number" required>
+                            <label>Emergency Contact</label>
+                        </div>
+                        <div class="info">
+                            <input type="text" name="tel" required>
+                            <label>Telephone</label>
+                        </div>
+                    </div>
+                    Have you experience some of these:
+                    <div class="health">
+                        <div class="info">
+                            Fever?&nbsp;&nbsp;
+                            <input type="radio" name="q1" value="yes"> Yes <br>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;
+                        <div class="info">
+                            <input type="radio" name="q1" value="yes"> No <br>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;
+                        <div class="info">
+                            Dry Cough or Sore Throat?&nbsp;&nbsp;
+                            <input type="radio" name="q2" value="yes"> Yes <br>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;
+                        <div class="info">
+                            <input type="radio" name="q2" value="yes"> No <br>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;
+                        <div class="info">
+                            Tiredness?&nbsp;&nbsp;
+                            <input type="radio" name="q3" value="yes"> Yes <br>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;
+                        <div class="info">
+                            <input type="radio" name="q3" value="yes"> No <br>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;
+                        <div class="info">
+                            Diarrhoea?&nbsp;&nbsp;
+                            <input type="radio" name="q4" value="yes"> Yes <br>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;
+                        <div class="info">
+                            <input type="radio" name="q4" value="yes"> No <br>
+                        </div>
+                    </div>
+                    <div class="forth">
+                        <div class="info">
+                            Any Allergy or Allergies? If there is please specify. If none just type "none":
+                            <input type="text" name="q5" required>
+                        </div>
+                        <div class="info">
+                            Health History:
+                            <input type="text" name="q6" required>
+                            <label></label>
+                        </div>
+                    </div>
+                    <div class="others">
+                        <div class="info">
+                            <label>Date of vaccination</label>
+                            <input type="date" name="date" required>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="info">
+                            Vaccine Type:
+                            <select name="vac" id="vac">
+                                <option>PFIZER</option>
+                                <option>MODERNA</option>
+                                <option>SINOVAC</option>
+                                <option>JNJ</option>
+                                <option>ASTRA</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="but">
+                    <input type="submit" value="SUBMIT">
+                    <input type="reset" value="RESET">
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

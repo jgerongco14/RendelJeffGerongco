@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant</title>
+    <link rel="stylesheet" href="resto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">RJG</label>
+            <ul>
+                <li><a href="../index.html"> HOME </a></li>
+                <li><a href="../tribute/tribute.html"> TRIBUTE </a></li>
+                <li><a href="../gallery/gallery.html"> GALLERY </a></li>
+                <li><a href="../restaurant/myrestaurant.html"> RESTAURANT </a></li>
+                <li><a href="../forms/vaccination.html"> FORMS </a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="desc">
+            <h3>CHI FOOD</h3>
+            <p>THE BEST FOOD THAT SERVE TO YOUR TABLE</p>
+            <br>
+            <a href="#order" class="btn">ORDER NOW</a>
+        </div>
+        <div class="image">
+            <img src="resto/nobg.png" alt="">
+        </div>
+
+    </section>
+
+    <div class="outer">
+        <div class="inner">
+            <div class="menu">
+                <h1>MENU</h1>
+                <div class="box">
+                    <h2>Main Course</h2>
+                    <div class="boxes">
+                        <label>Humba</label>
+                        <img src="resto/humba.jpg">
+                        <label>PHP 100.00</label>
+                    </div>
+                    <div class="boxes">
+                        <label>Pancit Special</label>
+                        <img src="resto/pancit.jpg">
+                        <label>PHP 80.00</label>
+                    </div>
+                    <div class="boxes">
+                        <label>Soy Chicken</label>
+                        <img src="resto/soychicken.jpg">
+                        <label>PHP 200.00</label>
+                    </div>
+                    <div class="boxes">
+                        <label>Lumpia</label>
+                        <img src="resto/lumpia.jpg">
+                        <label>PHP 100.00</label>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2>Desserts</h2>
+                    <div class="boxes">
+                        <label>Avocado Shake</label>
+                        <img src="resto/avocado.jpg">
+                        <label>PHP 80.00</label>
+                    </div>
+
+                    <div class="boxes">
+                        <label>Avocado Shake</label>
+                        <img src="resto/choco.jpg">
+                        <label>PHP 80.00</label>
+                    </div>
+                    <div class="boxes">
+                        <label>Avocado Shake</label>
+                        <img src="resto/mangoshake.jpg">
+                        <label>PHP 80.00</label>
+                    </div>
+                    <div class="boxes">
+                        <label>Avocado Shake</label>
+                        <img src="resto/halo2x.jpg">
+                        <label>PHP 100.00</label>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h2>Extra</h2>
+                    <div class="boxes">
+                        <label>Siomai</label>
+                        <img src="resto/siomai.jpg">
+                        <label>PHP 40.00</label>
+                    </div>
+                    <div class="boxes">
+                        <label>Siopao</label>
+                        <img src="resto/siopao.jpg">
+                        <label>PHP 50.00</label>
+                    </div>
+                    <div class="boxes">
+                        <label>Dumplings</label>
+                        <img src="resto/dumplings.jpg">
+                        <label>PHP 30.00</label>
+                    </div>
+                </div>
+            </div>
+            <section id="order">
+                <form>
+                    <div class="out">
+                        <div class="in">
+                            <h1>ORDER FORM</h1>
+                            <div class="name">
+                                <div class="count">
+                                    <div class="input">
+                                        <input type="text" required>
+                                        <label>First Name</label>
+                                    </div>
+                                </div>
+                                <div class="count">
+                                    <div class="input">
+                                        <input type="text" required>
+                                        <label>Middle Name</label>
+                                    </div>
+                                </div>
+                                <div class="count">
+                                    <div class="input">
+                                        <input type="text" required>
+                                        <label>Last Name</label>
+                                    </div>
+                                </div>
+                                <div class="count">
+                                    <div class="input">
+                                        <input type="text" required>
+                                        <label>Suffix</label>
+                                    </div>
+                                </div>
+                                <div class="count">
+                                    <div class="input">
+                                        <input type="text" required>
+                                        <label>Address</label>
+                                    </div>
+                                </div>
+                                <div class="count">
+                                    <div class="input">
+                                        <input type="text" name="email" required>
+                                        <label>Email</label>
+                                    </div>
+                                </div>
+                                <div class="count">
+                                    <div class="input">
+                                        <input type="text" name="number" required>
+                                        <label>Phone Number</label>
+                                    </div>
+                                </div>
+                                <div class="count">
+                                    <div class="input">
+                                        <input type="text" required>
+                                        <label>Telephone</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <p>Main Course:</p>
+                                    <div class="check">
+                                        <input type="checkbox" id="Lumpia">
+                                        <label for="Lumpia">Lumpia</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="number">
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" id="Pancit">
+                                        <label for="Pancit">Pancit</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="number">
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" id="Humba">
+                                        <label for="Humba">Humba</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="number">
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" id="Soy_Chicken">
+                                        <label for="Soy_Chicken">Soy Chicken</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="number">
+                                    </div>
+                                </div>
+
+                                <div class="checkbox">
+                                    <p>Desserts:</p>
+                                    <div class="check">
+                                        <input type="checkbox" id="Halo-Halo">
+                                        <label for="Halo-Halo">Halo-Halo</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="number">
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" id="Mango_Shake">
+                                        <label for="Mango_Shake">Mango Shake</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="number">
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" id="Chocolate_Shake">
+                                        <label for="HuChocolate_Shakemba">Chocolate Shake</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="number">
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" id="Avocado_Shake">
+                                        <label for="Avocado_Shake">Avocado Shake</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="number">
+                                    </div>
+                                </div>
+
+                                <div class="checkbox">
+                                    <p>Extra:</p>
+                                    <div class="check">
+                                        <input type="checkbox" id="Siomai">
+                                        <label for="Siomai">Siomai</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="number">
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" id="Siopao">
+                                        <label for="Siopao">Siopao</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="number">
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" id="Dumplings">
+                                        <label for="Dumplings">Dumplings</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="number">
+                                    </div>
+                                </div>
+                                <div class="but">
+                                    <input type="submit" value="ORDER"> &nbsp;&nbsp;&nbsp;
+                                    <input type="reset" value="RESET">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
